@@ -14,6 +14,9 @@ public class HomePage extends TestBase {
 	@FindBy(linkText="Profile")
 	WebElement profile;
 	
+	@FindBy(xpath="//li[@id=\"menu-item-4555\"]/a")
+	WebElement aboutUsFootLink;
+	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -22,6 +25,9 @@ public class HomePage extends TestBase {
 	 }
 	 public void clickprofile() {
 		 profile.click();
+	 }
+	 public void clickAboutUsFooterLink() {
+		 aboutUsFootLink.click();
 	 }
 	 
 
