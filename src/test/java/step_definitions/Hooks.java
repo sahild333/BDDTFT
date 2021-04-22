@@ -6,13 +6,13 @@ import io.cucumber.java.Before;
 
 public class Hooks extends TestBase {
 	
-//	@Before
-//	public void openBrowser() {
-//		initialization();
-//	}
-//	@After
-//	public void closeBrowser() {
-//		tearDown();
-//	}
+	@Before
+	public void openBrowser() {
+		initialization();
+	}
+	@After
+	public void closeBrowser() {
+		tearDown();
+	}
 
 }
