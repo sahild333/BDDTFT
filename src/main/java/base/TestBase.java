@@ -35,7 +35,7 @@ public class TestBase {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+//		driver.get(prop.getProperty("url"));
 	}
 	
 	public static void tearDown() {
