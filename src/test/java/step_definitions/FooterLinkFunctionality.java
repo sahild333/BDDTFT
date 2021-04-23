@@ -10,7 +10,10 @@ import pages.HomePage;
 
 public class FooterLinkFunctionality extends TestBase{
 	
-	HomePage hp;
+	HomePage hp; {
+	
+	hp = new HomePage();
+	}
 
 	@Given("user is in homepage of application")
 	public void user_is_in_homepage_of_application() {
