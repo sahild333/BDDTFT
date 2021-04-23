@@ -32,44 +32,44 @@ public class FooterLinkFunctionality extends TestBase{
 	public void user_should_land_on_about_us_page() {
 		Assert.assertTrue(driver.findElement(By.xpath("//h1[@class=\"entry-title\"]")).isDisplayed());
 	}
-//
-//	@When("user clicks on Our Team footerlink")
-//	public void user_clicks_on_our_team_footerlink() {
-//	  hp.clickOurTeamFooterLink();
-//	}
-//
-//	@Then("user should land on Our Team page")
-//	public void user_should_land_on_our_team_page() {
-//		Assert.assertEquals(driver.getTitle(), "Our Team - Transfotech Academy");
-//	}
-//
-//	@When("user clicks on Our Instructors footerlink")
-//	public void user_clicks_on_our_instructors_footerlink() {
-//	  hp.clickOurInstructorsFooterLink();
-//	}
-//
-//	@Then("user should land on Our Instructor page")
-//	public void user_should_land_on_our_instructor_page() {
-//		Assert.assertEquals(driver.getTitle(), "Our Instructors - Transfotech Academy");
-//	}
-//
-//	@When("user clicks onTuition & Financing footerlink")
-//	public void user_clicks_on_tuition_financing_footerlink() {
-//	 hp.clickTuitionFinancingFooterLink();
-//	}
-//
-//	@Then("user should land on Tuition & Financing page")
-//	public void user_should_land_on_tuition_financing_page() {
-//		Assert.assertEquals(driver.getTitle(), "Tuition & Financing - Transfotech Academy");
-//	}
-//
-//	@When("user clicks on Our Events footerlink")
-//	public void user_clicks_on_our_events_footerlink() {
-//	hp.clickOurEventsFooterLink();
-//	}
-//
-//	@Then("user should land on Our Events page")
-//	public void user_should_land_on_our_events_page() {
-//		Assert.assertEquals(driver.getTitle(), "Our Events - Transfotech Academy");
-//	}
+
+	@When("user clicks on Our Team footerlink")
+	public void user_clicks_on_our_team_footerlink() {
+	  hp.clickOurTeamFooterLink();
+	}
+
+	@Then("user should land on Our Team page")
+	public void user_should_land_on_our_team_page() {
+		Assert.assertEquals(driver.getTitle(), "Our Team - Transfotech Academy");
+	}
+
+	@When("user clicks on Our Instructors footerlink")
+	public void user_clicks_on_our_instructors_footerlink() {
+	  hp.clickOurInstructorsFooterLink();
+	}
+
+	@Then("user should land on Our Instructor page")
+	public void user_should_land_on_our_instructor_page() {
+		Assert.assertEquals(driver.getTitle(), "Our Instructors - Transfotech Academy");
+	}
+
+	@When("user clicks onTuition & Financing footerlink")
+	public void user_clicks_on_tuition_financing_footerlink() {
+	 hp.clickTuitionFinancingFooterLink();
+	}
+
+	@Then("user should land on Tuition & Financing page")
+	public void user_should_land_on_tuition_financing_page() {
+		Assert.assertEquals(driver.getTitle(), "Tuition & Financing - Transfotech Academy");
+	}
+
+	@When("user clicks on Our Events footerlink")
+	public void user_clicks_on_our_events_footerlink() {
+	hp.clickOurEventsFooterLink();
+	}
+
+	@Then("user should land on Our Events page")
+	public void user_should_land_on_our_events_page() {
+		Assert.assertEquals(driver.getTitle(), "Our Events - Transfotech Academy");
+	}
 }

@@ -19,7 +19,7 @@ public class TestBase {
 		prop = new Properties();
 		
 		try {
-			FileInputStream file = new FileInputStream("C:\\Users\\Manisha\\git\\BDDTFT\\src\\main\\java\\property\\config.properties");
+			FileInputStream file = new FileInputStream("C:\\Users\\Sahil Duggal\\Desktop\\Java Work Space\\BDDTFTHybrid\\src\\main\\java\\property\\config.properties");
 			prop.load(file);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
