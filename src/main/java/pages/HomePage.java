@@ -16,7 +16,20 @@ public class HomePage extends TestBase {
 	WebElement profile;
 	
 	@FindBy(xpath="//li[@id=\"menu-item-4555\"]/a")
-	WebElement aboutUsFootLink;
+	WebElement aboutUsFooterLink;
+	
+	@FindBy(linkText="Our Team")
+	WebElement ourTeamFooterLink;
+	
+	@FindBy(linkText="Our Instructors")
+	WebElement ourInstructorsFooterLink;
+	
+	@FindBy(id="menu-item-4554")
+	WebElement tuitionFinancingFooterLink;
+	
+	@FindBy(id="menu-item-4553")
+	WebElement ourEventsFooterLink;
+	
 	
 	@FindBy(xpath="//li[@id='menu-item-4125']")
 	public WebElement aboutUsMenuLink;
@@ -39,6 +52,19 @@ public class HomePage extends TestBase {
 		 profile.click();
 	 }
 	 public void clickAboutUsFooterLink() {
-		 aboutUsFootLink.click();
+		 aboutUsFooterLink.click();
 	 }
+	 public void clickOurTeamFooterLink() {
+		 ourTeamFooterLink.click();
+	 }
+	 public void clickOurInstructorsFooterLink() {
+		 ourInstructorsFooterLink.click();
+	 }
+	 public void clickTuitionFinancingFooterLink() {
+		 tuitionFinancingFooterLink.click();
+	 }
+	 public void clickOurEventsFooterLink() {
+		 ourEventsFooterLink.click();
+	 }
+
 }
