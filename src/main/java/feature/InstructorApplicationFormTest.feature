@@ -20,11 +20,11 @@
 @tag
 Feature: Functionality of Become A Teacher from homepage of application
 
-  @tag1
-  Scenario: User should be able to click Become a Teacher link
-    Given user is in homepage of application
-    When user clicks on Become a Teacher link
-    Then user should land on Become a Teacher page
+  #@tag1
+  #Scenario: User should be able to click Become a Teacher link
+    #Given user is in homepage of application
+    #When user clicks on Become a Teacher link
+    #Then user should land on Become a Teacher page
   
   @tag2
   Scenario: User should be able to enter required information and send message
