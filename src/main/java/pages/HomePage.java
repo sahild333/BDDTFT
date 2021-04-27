@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,6 +15,7 @@ public class HomePage extends TestBase {
 	@FindBy(linkText="Profile")
 	WebElement profile;
 	
+
 	@FindBy(xpath="//li[@id='menu-item-3910']")
 	WebElement OurEvents;
 	
@@ -26,9 +28,32 @@ public class HomePage extends TestBase {
 	@FindBy(linkText="//li[@id='menu-item-3862']/a")
 	WebElement ContactUs;
 	
-	@FindBy(xpath="//li[@id='menu-item-4555']/a")
-	WebElement aboutUsFootLink;
-
+	@FindBy(xpath="//li[@id=\"menu-item-4555\"]/a")
+	WebElement aboutUsFooterLink;
+	
+	@FindBy(linkText="Our Team")
+	WebElement ourTeamFooterLink;
+	
+	@FindBy(linkText="Our Instructors")
+	WebElement ourInstructorsFooterLink;
+	
+	@FindBy(id="menu-item-4554")
+	WebElement tuitionFinancingFooterLink;
+	
+	@FindBy(id="menu-item-4553")
+	WebElement ourEventsFooterLink;
+	
+	
+	@FindBy(xpath="//li[@id='menu-item-4125']")
+	public WebElement aboutUsMenuLink;
+	
+	@FindBy(xpath="//li[@id='menu-item-4061']")
+	public WebElement servicesMenuLink;
+	
+	@FindBy(xpath="//li[@id='menu-item-3850']")
+	public WebElement coursesMenuLink;
+	
+	
 	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -40,8 +65,21 @@ public class HomePage extends TestBase {
 		 profile.click();
 	 }
 	 public void clickAboutUsFooterLink() {
-		 aboutUsFootLink.click();
+		 aboutUsFooterLink.click();
 	 }
+	 public void clickOurTeamFooterLink() {
+		 ourTeamFooterLink.click();
+	 }
+	 public void clickOurInstructorsFooterLink() {
+		 ourInstructorsFooterLink.click();
+	 }
+	 public void clickTuitionFinancingFooterLink() {
+		 tuitionFinancingFooterLink.click();
+	 }
+	 public void clickOurEventsFooterLink() {
+		 ourEventsFooterLink.click();
+	 }
+
 	 public void clickOurEvents() {
 		 OurEvents.click();
 	 }	 
@@ -57,4 +95,5 @@ public class HomePage extends TestBase {
 		 ContactUs.click();	 	
 		 
 	 }
+
 }
