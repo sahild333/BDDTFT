@@ -17,6 +17,19 @@ public class HomePage extends TestBase {
 	@FindBy(linkText="Profile")
 	WebElement profile;
 	
+
+	@FindBy(xpath="//li[@id='menu-item-3910']")
+	WebElement OurEvents;
+	
+	@FindBy(linkText="//li[@id='menu-item-3866']/a")
+	WebElement Blogs;
+	
+	@FindBy(linkText="//li[@id='menu-item-4009']/a")
+	WebElement TutionFinancing;
+	
+	@FindBy(linkText="//li[@id='menu-item-3862']/a")
+	WebElement ContactUs;
+	
 	@FindBy(xpath="//li[@id=\"menu-item-4555\"]/a")
 	WebElement aboutUsFooterLink;
 	
@@ -97,6 +110,7 @@ public class HomePage extends TestBase {
 	 public void clickOurEventsFooterLink() {
 		 ourEventsFooterLink.click();
 	 }
+<<<<<<< HEAD
 	 public void clickOurEventsMenuLink() {
 		 ourEventsMenuLink.click();
 	 }
@@ -140,4 +154,22 @@ public class HomePage extends TestBase {
 		 Actions action = new Actions(driver);
 		 action.moveToElement(dataAnalyticsVisualizationCourseLink).click().build().perform();
 	 }
+
+	 public void clickOurEvents() {
+		 OurEvents.click();
+	 }	 
+	
+	 public void clickTutionFinancing() {
+		 TutionFinancing.click();	 	
+	 
+	 }
+	 public void clickBlogs() {
+		 Blogs.click();
+	 }
+	 public void clickContactUs() {
+		 ContactUs.click();	 	
+		 
+	 }
+
+>>>>>>> refs/remotes/origin/master
 }
