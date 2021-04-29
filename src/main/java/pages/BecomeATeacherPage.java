@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import base.TestBase;
 
-public class BecomeATeacher extends TestBase {
+public class BecomeATeacherPage extends TestBase {
 	
 	@FindBy(xpath="//input[@placeholder=\"First Name\"]")
 	WebElement firstNameField;
@@ -26,7 +26,10 @@ public class BecomeATeacher extends TestBase {
 	@FindBy(linkText="Send Your Message")
 	WebElement sendYourMessageLink;
 	
-	public BecomeATeacher() {
+	@FindBy(xpath=("//h1[@class='entry-title']"))
+	public WebElement becomeATeacherLogo;
+	
+	public BecomeATeacherPage() {
 		PageFactory.initElements(driver, this);
 	}
 	public void clicksendYourMessage() {

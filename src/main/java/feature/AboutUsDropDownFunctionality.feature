@@ -17,24 +17,25 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Menu links with drop down options visibility
+Feature: About Us drop down functionality
 
   @tag1
-  Scenario: User should be able to view different options when cursor is moved to About Us menu link
+  Scenario: User should be able to click Our Story from About Us menu link
     Given user is in homepage
     When user moves cursor to About Us menu link
-    Then user should be able to view different About Us options
+    And user clicks on Our Story link
+    Then user should land on Our Story page
    
   @tag2
-  Scenario: User should be able to view different options when cursor is moved to Services menu link
+  Scenario: User should be click Our Team from About Us menu link
     Given user is in homepage
-    When user moves cursor to Services menu link
-    Then user should be able to view different Services options
+    When user clicks on Our Team link
+    Then user should land on the Our Team page
     
 	@tag3
-  Scenario: User should be able to view different options when cursor is moved to Courses menu link
+  Scenario: User should be able to click Our Instructors from About Us menu link
     Given user is in homepage
-    When user moves cursor to Courses menu link
-    Then user should be able to view different Courses options
+    When user clicks on Our Instructors link
+    Then user should land on Our Instructors page
 
   

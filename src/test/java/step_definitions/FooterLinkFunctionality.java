@@ -12,15 +12,18 @@ import pages.HomePage;
 public class FooterLinkFunctionality extends TestBase{
 	
 
-	HomePage hp;{
-		
+	HomePage hp;
+	
+	public FooterLinkFunctionality() {
+	
+	super();
 	hp = new HomePage();
 	
 	}
 	
 	@Given("user is in homepage of application")
 	public void user_is_in_homepage_of_application() {
-	driver.get(prop.getProperty("url"));
+	driver.get(prop.getProperty("url")); //Assert
 	}
 
 	@When("user clicks on About Us footerlink")
@@ -68,8 +71,8 @@ public class FooterLinkFunctionality extends TestBase{
 	hp.clickOurEventsFooterLink();
 	}
 
-	@Then("user should land on Our Events page")
-	public void user_should_land_on_our_events_page() {
+	@Then("user should land on the Our Events page")
+	public void user_should_land_on_the_our_events_page() {
 		Assert.assertEquals(driver.getTitle(), "Our Events - Transfotech Academy");
 	}
 }

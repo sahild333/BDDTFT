@@ -10,23 +10,25 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.BecomeATeacher;
+import pages.BecomeATeacherPage;
 import pages.HomePage;
 
 
 public class BecomeATeacherLinkTest extends TestBase{
 	
-	HomePage hp;
-	BecomeATeacher bat; {
+	HomePage hp; 
+	BecomeATeacherPage bat;
 	
-	hp = new HomePage();
-	bat = new BecomeATeacher();
-	
+	public BecomeATeacherLinkTest() {
+		super();
+		hp = new HomePage();
+		bat = new BecomeATeacherPage();
 	}
+	
 	
 	@Given("user is in the homepage of application")
 	public void user_is_in_the_homepage_of_application() {
-		driver.get(prop.getProperty("url"));
+		System.out.println(driver.getTitle()); //Assert
 	}
 
 	@When("user clicks on Become a Teacher link")
@@ -36,7 +38,7 @@ public class BecomeATeacherLinkTest extends TestBase{
 
 	@Then("user should land on Become a Teacher page")
 	public void user_should_land_on_become_a_teacher_page() {
-		Assert.assertTrue(driver.findElement(By.xpath("//h1[@class='entry-title']")).isDisplayed());
+		Assert.assertTrue(bat.becomeATeacherLogo.isDisplayed());
 	}
 
 	
